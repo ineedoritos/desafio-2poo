@@ -15,7 +15,7 @@ public class formularioEditar extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         long id = Long.parseLong(request.getParameter("id"));
         ProductoDAO dao = new ProductoDAO();
-        Producto producto = dao.obtenerPorId(id);  // Asegúrate de tener este método en tu DAO
+        Producto producto = dao.obtenerPorId(id);
         request.setAttribute("producto", producto);
         request.getRequestDispatcher("formularioEditar.jsp").forward(request, response);
     }
