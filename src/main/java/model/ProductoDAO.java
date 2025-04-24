@@ -19,7 +19,8 @@ public class ProductoDAO {
         }
         return DriverManager.getConnection(URL, USER, PASS);
     }
-
+    //un dao funciona para mapear nuestro objeto a idioma que entienda nuestra base de datos en pocas palabras
+    //se usan queryes preparadas para evitar inyecciones sql
     public List<Producto> listar() {
         List<Producto> productos = new ArrayList<>();
         String sql = "SELECT * FROM producto";

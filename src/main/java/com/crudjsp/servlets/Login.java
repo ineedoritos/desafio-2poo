@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 import static model.Usuario.verificar;
-
+//los controladores servlets son bastante eficientes y su enrutamiento es tan bonito
 @WebServlet("/login")
 public class Login extends HttpServlet {
 

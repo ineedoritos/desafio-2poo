@@ -1,7 +1,9 @@
 package model;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
-
+//se usan 2 constructores o incluso mas, dependiendo de como lo hayamos querido hacer en otras partes
+// el constructor vacio es para poder instanciar un objeto vacio y luego poder setearle algun atributo
+//igualmente el IDE se toma ese trabajo por si no lo dejamos vacio
 public class Usuario {
     private static int idCounter = 0;
     private int id;
